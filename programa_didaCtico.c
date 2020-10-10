@@ -10,9 +10,7 @@
  * no se modifique el nombre del autor original.
  * 
  * Antes de comenzar comprueba que esta es la versión más reciente 
- * mirando en https://www.github.com/poses98/basicosEnC
- * 
- * 
+ * mirando en https://www.github.com/poses98/basicos-en-c
  * 
  *H*/
 
@@ -84,8 +82,8 @@ int main(){
      * el código en la función principal. También cumplen con su
      * función de reutilización del código.
      * 
-     * En Programación orientada a objetos (POO) son el pilar fundamental,
-     * junto con los atributos de la clase, de los objetos(clases) por lo
+     * En Programación Orientada a Objetos (POO) son el pilar fundamental,
+     * junto con los atributos de la clase, de los objetos por lo
      * que es importante manejarse con ellas con soltura.
      */      
 
@@ -134,7 +132,7 @@ void FirstVoid(){
  * Función que realiza la suma de dos números
  * @param int num1: primer término
  * @param int num2: segundo término
- * @return la suma de los dos términos
+ * @return int: la suma de los dos términos
  */ 
 int Sum(int num1,int num2){
     return num1 + num2;
@@ -143,12 +141,16 @@ int Sum(int num1,int num2){
 /**
  * Función que imprime por pantalla un array de enteros
  * @param int - sizeOfArr: tamaño del array de int
- * @param char[] - ch_arr: array de int
+ * @param int[] - int_arr: array de int
  */
 void ReadArrayOfInt(int sizeOfArr,int int_arr[]){
     printf("\tArray of int:{");
+    // for que itera sobre el array
     for (int i = 0; i < sizeOfArr; i++)
     {
+        // Imprimimos por pantalla cada posicion del array
+        // int_arr[i] -> indica que es el valor de int_arr en la posición "i"
+        // como el for va del 0 al 4 es = que decir int_arr[0],int_arr[1]...
         printf(" %d ",int_arr[i]);
     }
     printf("}\n");
@@ -161,8 +163,12 @@ void ReadArrayOfInt(int sizeOfArr,int int_arr[]){
  */
 void ReadArrayOfChar(int sizeOfArr,char ch_arr[]){
     printf("\tArray of chars:'");
+    // for que itera sobre el array
     for (int i = 0; i < sizeOfArr; i++)
     {
+        // Imprimimos por pantalla cada posicion del array
+        // ch_arr[i] -> indica que es el valor de ch_array en la posición "i"
+        // como el for va del 0 al 4 es = que decir ch_array[0],ch_array[1]...
         printf("%c",ch_arr[i]);
     }
     printf("'\n");
