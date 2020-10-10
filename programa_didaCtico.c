@@ -57,10 +57,10 @@ int main(){
      * Para su lectura es necesario un for que se puede encontrar
      * más abajo en la función ReadIntArray().
      *
-     *Generalmente es buena idea guardarlo en una variable int
+     *Generalmente es buena idea guardar el tamaño en una variable int
      *para tenerlo a mano a la hora de iterar sobre él en un
      *for.
-     * Los arrays pueden estar compuesto por más de una fila, lo 
+     * Los arrays pueden estar compuestos por más de una fila, lo 
      * que conocemos como arrays de 2 dimensiones o matrices.
      * 
      * Su declaración es de la siguiente forma:
